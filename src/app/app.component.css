@@ -1,0 +1,31 @@
+.movies {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1em;
+  }
+  
+  .movie {
+    width: 300px;
+    margin: 0.5em;
+  }
+  
+  .poster {
+    max-width: 300px;
+  }
+  
+  h1 {
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+  }
+  button{
+      padding: 10px;
+  }

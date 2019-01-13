@@ -1,0 +1,19 @@
+<section class="center">
+  <button (click)="loadPopularMovies()">Películas populares</button>
+
+  <button (click)="loadTrendingMovies()">Películas "trending"</button>
+
+  <button *ngIf="data" (click)="clean()">Borrar</button>
+</section>
+<section class="center" *ngIf="!data">Sin resultados</section>
+
+<section *ngIf="data">
+  <h1>{{ title }}</h1>
+  <div class="movies">
+    <div class="movie" *ngFor="let movie of data">
+      <h1>{{ movie.title }}</h1>
+      <img class="poster" src="{{ imgDomain + movie.poster_path }}" alt="" />
+    </div>
+  </div>
+</section>
+
