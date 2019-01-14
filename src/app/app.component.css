@@ -22,10 +22,13 @@
   }
   .center {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     padding: 1em;
+    background-color: aqua;
   }
   button{
-      padding: 10px;
+      padding: 20px;
+      border-radius: 20px;
+      background-color: white;
   }

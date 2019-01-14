@@ -14,13 +14,13 @@ export class AppComponent {
   loadPopularMovies() {
     this.api.popularMovies().then((result: any) => {
       this.data = result.results;
-      this.title = 'Popular movies';
+      this.title = 'Películas populares';
     });
   }
   loadTrendingMovies() {
     this.api.trendingMovies().then((result: any) => {
       this.data = result.results;
-      this.title = 'Trending movies';
+      this.title = 'Películas trending';
     });
   }
   clean() {

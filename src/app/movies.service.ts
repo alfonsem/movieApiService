@@ -13,14 +13,14 @@ export class MoviesService {
     this.http = http;
   }
   popularMovies() {
-    return new Promise((resolve, reject) => {
+    return new Promise(resolve => {
       this.http.get(this.popularEndpoint).subscribe(result => {
         resolve(result);
       });
     });
   }
   trendingMovies() {
-    return new Promise((resolve, reject) => {
+    return new Promise(resolve => {
       this.http.get(this.trendingMoviesEndpoint).subscribe(result => {
         resolve(result);
       });
