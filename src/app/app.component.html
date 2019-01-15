@@ -11,7 +11,7 @@
   <h1>{{ title }}</h1>
   <div class="movies">
     <div class="movie" *ngFor="let movie of data">
-      <h1>{{ movie.title }}</h1>
+      <h1>{{ movie.title || movie.original_title || movie.name}}</h1>
       <img class="poster" src="{{ imgDomain + movie.poster_path }}" alt="" />
     </div>
   </div>
