@@ -1,4 +1,7 @@
-<!-- <section class="center">
+<!-- <p>
+  home works!
+</p> -->
+<section class="center">
   <button (click)="loadPopularMovies()">Películas populares</button>
 
   <button (click)="loadTrendingMovies()">Películas "trending"</button>
@@ -7,14 +10,16 @@
 </section>
 <section class="center2" *ngIf="!data">Sin resultados</section>
 
+<!-- <pre>
+  {{ data | json }}
+</pre> -->
+
 <section *ngIf="data">
   <h1>{{ title }}</h1>
   <div class="movies">
-    <div class="movie" *ngFor="let movie of data">
+    <a routerLink="/movie/{{ movie.id }}" class="movie" *ngFor="let movie of data">
       <h1>{{ movie.title }}</h1>
       <img class="poster" src="{{ imgDomain + movie.poster_path }}" alt="" />
-    </div>
+    </a>
   </div>
-</section> -->
-<router-outlet></router-outlet>
-
+</section>

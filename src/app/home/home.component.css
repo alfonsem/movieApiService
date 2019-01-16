@@ -1,4 +1,4 @@
-/* .movies {
+.movies {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -6,6 +6,7 @@
   }
   
   .movie {
+    all: unset;
     width: 300px;
     margin: 0.5em;
   }
@@ -31,4 +32,4 @@
       padding: 20px;
       border-radius: 20px;
       background-color: white;
-  } */
+  }
