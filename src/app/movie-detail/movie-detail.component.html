@@ -1,0 +1,19 @@
+<!-- <p>
+  movie-detail works! {{id}}
+  {{movieData | json}}
+</p> -->
+
+<div *ngIf="movieData">
+  <h1>{{ movieData.title || movieData.original_title || movieData.original_name }}</h1>
+  <p>Language: {{ movieData.original_language }}</p>
+  <p>Popularity {{ movieData.popularity }}</p>
+  <p>{{ movieData.overview }}</p>
+  <ul>
+    <h2>Producers:</h2>
+    <li *ngFor="let producer of movieData.production_companies">{{ producer.name }}</li>
+  </ul>
+  <img src="{{ imgDomain + movieData.backdrop_path }}" alt="" />
+</div>
+
+<h2 *ngIf="!movieData">Id no encontrado</h2>
+<button ></button>
