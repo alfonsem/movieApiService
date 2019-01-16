@@ -2,7 +2,7 @@ import { Component, } from '@angular/core';
 import { MoviesService } from '../movies.service'; //Importamos el servicio desde donde cargaremos las "movies"
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-home', //
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
