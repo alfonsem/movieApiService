@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 
 import { RouterModule, Routes } from '@angular/router';
+import { MovieComponent } from './movie/movie.component';
 
 const routes: Routes=[
   { path: 'home', component: HomeComponent },
@@ -19,7 +20,8 @@ const routes: Routes=[
   declarations: [
     AppComponent,
     HomeComponent,
-    MovieDetailComponent
+    MovieDetailComponent,
+    MovieComponent
   ],
   imports: [
     BrowserModule,HttpClientModule,RouterModule.forRoot(routes)
